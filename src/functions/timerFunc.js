@@ -1,8 +1,0 @@
-const { app } = require('@azure/functions');
-
-app.timer('timerFunc', {
-    schedule: '0 * * * * *',
-    handler: (myTimer, context) => {
-        context.log('Timer function processed request.');
-    }
-});
